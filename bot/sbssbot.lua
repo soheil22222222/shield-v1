@@ -256,28 +256,33 @@ function create_config( )
     "webshot",
     "welcome"
     },
-    sudo_users = {122774063},--Sudo users
+    sudo_users = {216446918},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [[Sbss Bot V3
-    An Advanced Anti Spam Bot Forked On TeleSeed
-    
-    Develpoed By:
-    @Mr_Ah_S
-    
-    Special Thanks To:
-    Mehr Pouya
-    Arman
-    IM/-\N
-    Creed Is Dead
-    
-    Powered By @Sbss_Team
-    
-    #Open Source
-    https://github.com/SbssTeam/Sbss
+    about_text = [[
+Fuck baba😒sbsskhkhkh😂
 ]],
     help_text_realm = [[
-See Patterns In Github
+📥 Realm commands 📤
+﹀︿﹀︿﹀︿﹀︿﹀︿﹀︿﹀︿﹀
+💎 ساخت گروه {نام}
+ساخت شدن گروه
+
+💎/addadmin {یوزرنیم}
+اضافه شد ادمین به بات
+
+💎/removeadmin {یوزرنیم}
+حذف ادمین از بات
+
+💎/list groups
+لیست گروه های بات
+
+💎/broadcast{متن}
+فرستان متن به تمام گروه های بات
+
+﹀︿﹀︿﹀︿﹀︿﹀︿﹀︿﹀︿﹀
+Channel: @Shield_Team
+#Shield_bot
 ]],
     help_fa_text = [[
 Iدستورات فارسی ربات:
