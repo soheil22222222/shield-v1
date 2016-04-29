@@ -141,16 +141,16 @@ return {
     "^(آمار)$",
     "^(لیست آمار)$",
     "^(آمار) (گروه) (%d+)",
-    "^(آمار) (sbss)",
+    "^(آمار) (shield)",
     "^(stats)$",
     "^(statslist)$",
     "^(stats) (group) (%d+)",
-    "^(stats) (sbss)",
+    "^(stats) (shield)",
     "^[!/#](stats)$",
     "^[!/#](statslist)$",
     "^[!/#](stats) (group) (%d+)",
-    "^[!/#](stats) (sbss)",
-	"^[!/#]([Ss]bss)$"
+    "^[!/#](stats) (shield)",
+	"^[!/#]([Ss]hield)$"
     }, 
   run = run
 }
