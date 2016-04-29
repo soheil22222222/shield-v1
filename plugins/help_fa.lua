@@ -99,7 +99,7 @@ return [[
 لیست کلمات فیلتر شده
 〰〰〰〰〰〰〰〰〰〰〰〰
 Sodo: @Xxx_sargardan_xxX
-Channel: Shield_Team
+Channel: @Shield_Team
 ]]
 end
 end
