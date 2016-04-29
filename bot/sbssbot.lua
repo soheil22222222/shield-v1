@@ -259,7 +259,8 @@ function create_config( )
     sudo_users = {216446918},--Sudo users
     disabled_channels = {},
     moderation = {data = 'data/moderation.json'},
-    about_text = [
+    about_text = [[
+Fuck baba koni 😒 sbss😂😂😂😂😂
 ]],
     help_text_realm = [[
 📥 Realm commands 📤
