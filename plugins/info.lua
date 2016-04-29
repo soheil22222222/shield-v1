@@ -150,7 +150,7 @@ local function run(msg, matches)
   return text
   end
   end
- if matches[1]:lower() == 'اطلاعات' and not matches[2] then
+ if matches[1]:lower() == 'اینفو' and not matches[2] then
   local receiver = get_receiver(msg)
   local Reply = msg.reply_id
   if msg.reply_id then
@@ -217,8 +217,8 @@ return {
 	'!info: Return your info and the chat info if you are in one.',
   },
   patterns = {
-	"^(اطلاعات)$",
-	"^(اطلاعات) (.*)$",
+	"^(اینفو)$",
+	"^(اینفو) (.*)$",
 	"^(نصب مقام) (%d+) (.*)$",
 	"^(نصب مقام) (.*)$",
   },
