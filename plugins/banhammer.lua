@@ -87,7 +87,7 @@ local function kick_ban_res(extra, success, result)
       local receiver = "chat#id"..chat_id
        if get_cmd == "اخراج" then
          if member_id == from_id then
-             return send_large_msg(receiver, "شما نمیتوانید خود را حذف کنید")
+             return send_large_msg(receiver, "کصخلی ناموسا")
          end
          if is_momod2(member_id, chat_id) and not is_admin2(sender) then
             return send_large_msg(receiver, "شما نمیتواند این فرد را حذف کنید")
@@ -95,7 +95,7 @@ local function kick_ban_res(extra, success, result)
          return kick_user(member_id, chat_id)
       elseif get_cmd == 'بن' then
         if is_momod2(member_id, chat_id) and not is_admin2(sender) then
-          return send_large_msg(receiver, "شما نمیتوانید این فرد را بن کنید")
+          return send_large_msg(receiver, "نکن باوا")
         end
         send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] بن شد')
         return ban_user(member_id, chat_id)
@@ -105,7 +105,7 @@ local function kick_ban_res(extra, success, result)
         redis:srem(hash, member_id)
         return 'کاربر '..user_id..' آن بن شد'
       elseif get_cmd == 'سوپر بن' then
-        send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] از همه گروه ها بن شد')
+        send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] ('کس ننش')
         return banall_user(member_id, chat_id)
       elseif get_cmd == 'حذف سوپر بن' then
         send_large_msg(receiver, 'کاربر @'..member..' ['..member_id..'] از سوپر بن خارج شد')
@@ -163,10 +163,10 @@ local function run(msg, matches)
          	return
         end
         if not is_admin(msg) and is_momod2(matches[2], msg.to.id) then
-          	return "شما نمیتوانید این فرد را بن کنید"
+          	return "نکن باوا"
         end
         if tonumber(matches[2]) == tonumber(msg.from.id) then
-          	return "شما نمیتوانید خود را بن کنید"
+          	return "کصخلی ناموسا"
         end
         local name = user_print_name(msg.from)
         savelog(msg.to.id, name.." ["..msg.from.id.."] baned user ".. matches[2])
@@ -197,7 +197,7 @@ local function run(msg, matches)
         	redis:srem(hash, user_id)
         	local name = user_print_name(msg.from)
         	savelog(msg.to.id, name.." ["..msg.from.id.."] unbaned user ".. matches[2])
-        	return 'کاربر '..user_id..' آن بن شد'
+        	return 'کاربر '..user_id..'اکی شد'
       else
 		local cbres_extra = {
 			chat_id = msg.to.id,
@@ -224,10 +224,10 @@ if matches[1]:lower() == 'اخراج' or matches[1]:lower() == 'kick' then
 			return
 		end
 		if not is_admin(msg) and is_momod2(matches[2], msg.to.id) then
-			return "شما نمیتوانید این فرد را حذف کنید"
+			return "نکن باوا"
 		end
 		if tonumber(matches[2]) == tonumber(msg.from.id) then
-			return "شما نمیتوانید خود را حذف کنید"
+			return " کصخلی ناموسا"
 		end
       		local user_id = matches[2]
       		local chat_id = msg.to.id
@@ -263,7 +263,7 @@ end
          	return false 
         end
         	banall_user(targetuser)
-       		return 'کاربر ['..user_id..' ] از همه گروه ها بن شد'
+       		return 'کاربر ['..user_id..' ] 'کس ننش '
       else
 	local cbres_extra = {
 		chat_id = msg.to.id,
@@ -283,7 +283,7 @@ end
           	return false 
         end
        		unbanall_user(user_id)
-        	return 'کاربر ['..user_id..' ] از سوپر بن خارج شد'
+        	return 'کاربر ['..user_id..' ] 'از سوپر بن خارج شد '
       else
 	local cbres_extra = {
 		chat_id = msg.to.id,
