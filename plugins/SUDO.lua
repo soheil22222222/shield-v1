@@ -48,7 +48,7 @@ end
 
 function run(msg, matches)
   if not is_sudo(msg) then
-    return "شما دسترسی ندارید"
+    return "سیک کن بابا"
   end
   local receiver = get_receiver(msg)
   if string.match(msg.text, '!sh') then
