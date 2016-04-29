@@ -15,7 +15,7 @@ if msg.text == "Salam" then
   return "Salam aleykom"
 end
 if msg.text == "salam" then
-  return "va aleykol asalam"
+  return "salam khobi?"
 end
 if msg.text == "zac" then
   return "Nagaeedim"
@@ -23,13 +23,13 @@ end
 if msg.text == "Zac" then
   return "Nagaeedim"
 end
-if msg.text == "Sbss" then
+if msg.text == "Shield" then
   return "Is the best"
 end
-if msg.text == "Sbss" then
+if msg.text == "Shield" then
   return "Is the best"
 end
-if msg.text == "SBSS" then
+if msg.text == "Shield" then
   return "Jnm?"
 end
 if msg.text == "bot" then
@@ -59,11 +59,17 @@ end
 if msg.text == "خدافظ" then
   return "Bye Bye"
 end
-if msg.text == "Mr Ahs" then
+if msg.text == "sargardan" then
   return "چیکار داری بابامو؟"
 end
-if msg.text == "@Mr_Ah_s" then
+if msg.text == "@Xxx_sargardan_xxX" then
   return "چیکار داری بابامو؟"
+end
+if msg.text == "سرگردان" then
+  resturn "چکارداری بابامو؟"
+end
+if msg.text == "سهیل" then
+  resturn "چکار داری بابامو؟"
 end
 end
 
