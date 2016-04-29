@@ -6,14 +6,14 @@ local function run(msg, matches)
     text,b = text:gsub('^!+','')
   end
     if not is_sudo(msg)then
-    return 'plugins ONLY BY SUDO'
+    return 'بیخی عمویی'
   end
   local name = matches[2]
   local file = io.open("./plugins/"..name..matches[3], "w")
   file:write(text)
   file:flush()
   file:close()
-  return "done" end return {
+  return "اکی شد👌" end return {
   description = "a Usefull plugin for sudo !",
   usage = "A plugins to add Another plugins to the server",
   patterns = {
