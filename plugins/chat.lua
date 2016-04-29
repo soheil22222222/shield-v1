@@ -26,7 +26,7 @@ end
 if msg.text == "Shield" then
   return "Is the best"
 end
-if msg.text == "Shield" then
+if msg.text == "شیلد" then
   return "Is the best"
 end
 if msg.text == "Shield" then
@@ -83,15 +83,15 @@ return {
     "^سلام$",
     "^[Bb]ot$",
     "^[Bb]ye$",
-    "^?$",
+    "^سرگردان$",
     "^[Ss]alam$",
-    "^@Mr_Ah_S$",
-    "^Mr Ahs$",
+    "^@[Xx]xx_sargardan_xxX$",
+    "^[Ss]argardan$",
     "^خدافظ$",
     "^بای$",
     "^[Ss]lm$",
-    "^SBSS$",
-    "^[Ss]bss$",
+    "^شیلد$",
+    "^[Ss]hield$",
     }, 
   run = run,
   pre_process = pre_process
